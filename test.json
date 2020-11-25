@@ -1,4 +1,4 @@
- "arr":[
+ var arr = [
         {
             name:"一楼",
             arr2:[{
