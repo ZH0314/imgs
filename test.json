@@ -1,35 +1,35 @@
 {
     "send":[
     {
-            name:"一楼",
+            "name":"一楼",
             "arr2":[{
-                name:"123",
+                "name":"123",
                 area: "45"
             },{
-                name:"111",
+                "name":"111",
                 area: "45"
             },{
-                name:"222",
+                "name":"222",
                 area: "45"
             },{
-                name:"333",
+                "name":"333",
                 area: "45"
             }]
         },
         {
-            name:"二楼",
+            "name":"二楼",
             "arr2":[{
-                name:"123",
+                "name":"123",
                 area: "45"
             },{
-                name:"111",
+                "name":"111",
                 area: "45"
             },{
-                name:"222",
+                "name":"222",
                 area: "45"
             },{
-                name:"333",
-                area: "45"
+                "name":"333",
+                "area": "45"
             }]
         }
     ]
