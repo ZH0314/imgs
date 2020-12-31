@@ -84,6 +84,7 @@
             background: linear-gradient(135deg, #00C4FF, #9D1BB2);
             color: transparent;
             -webkit-background-clip: text;
+            font-family: 'Caveat';
             font-size: 12px;
             text-align: center;
         }
@@ -139,7 +140,7 @@
 
 <body>
     <div class="type-js headline" style="position: relative;z-index: 99999999;">
-        <h1 class="text-js">诗雅 祝你：2021夜里有灯 梦里有人 平安喜乐 得偿所愿。新的一年好运爆棚，愿望通通实现！</h1>
+        <h1 class="text-js">诗雅 祝你：2021 夜里有灯 梦里有人 平安喜乐 得偿所愿。新的一年好运爆棚，愿望通通实现！</h1>
     </div>
     <canvas style="margin-top: -170px;position: relative; z-index: 1;" id="newYear"></canvas>
     <div class="landscape"></div>
@@ -170,11 +171,11 @@
                         }, i * typingSpeed);
                     })(i + 1, text[i]);
                 }
-            }, 1500);
+            }, 500);
         }
 
         $(document).ready(function () {   
-            autoType(".type-js", 200);
+            autoType(".type-js", 100);
         });
 
         function Star(id, x, y) {
