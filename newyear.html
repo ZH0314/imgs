@@ -138,13 +138,13 @@
 </head>
 
 <body>
-    <div class="type-js headline">
+    <div class="type-js headline" style="position: relative;z-index: 99999999;">
         <h1 class="text-js">诗雅 祝你：2021夜里有灯 梦里有人 平安喜乐 得偿所愿。新的一年好运爆棚，愿望通通实现！</h1>
     </div>
-    <canvas style="margin-top: -170px;" id="newYear"></canvas>
+    <canvas style="margin-top: -170px;position: relative; z-index: 1;" id="newYear"></canvas>
     <div class="landscape"></div>
     <div class="filter"></div>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" style="position: relative;z-index: 0;"></canvas>
     <script type="text/javascript">
         function autoType(elementClass, typingSpeed) {
             var thhis = $(elementClass);
