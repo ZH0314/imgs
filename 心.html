@@ -252,9 +252,6 @@
       .blur {
         filter: blur(1px);
       }
-      #sparks{
-      position: absolute;
-      }
     </style>
     <style>
       body {
@@ -420,6 +417,7 @@
 
       (function spark() {
         var canvas = document.querySelector(OPT.selector);
+        canvas.style.position = "absolute";
         var ctx = canvas.getContext("2d");
 
         var sparks = [];
