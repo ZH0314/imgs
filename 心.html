@@ -8,127 +8,18 @@
       body {
         height: 100%;
         width: 100%;
+        background-color: #000;
       }
       body {
         margin: 0;
       }
-      .d1 {
-        height: 200px;
-        margin-top: 500px;
-        perspective: 1000px;
-      }
-      img {
-        width: 200px;
-        height: 200px;
-        border-radius: 30px;
-      }
-      .d1 .box {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        transform-style: preserve-3d;
-        transform: rotateX(0deg) rotateY(0deg);
-        animation: xz 20s linear infinite;
-      }
-      .d1 .box div {
-        position: absolute;
-        top: 100;
-        left: 100;
-        width: 100%;
-        height: 100%;
-        line-height: 200px;
-        font-size: 89px;
-        text-align: center;
-        transition: xz 0.8s ease-in;
-      }
-      .d1 .box .front {
-        transform: translateZ(100px);
-      }
-      .d1 .box .back {
-        transform: translateZ(-100px) rotateY(180deg); /* 将背面文字转正 */
-      }
-      .d1 .box .right {
-        transform: rotateY(90deg) translateZ(100px); /* y轴成点，x，z轴互相垂直，顺时针旋转为负角度，逆时针为正*/
-      }
-      .d1 .box .left {
-        transform: rotateY(-90deg) translateZ(100px);
-      }
-      .d1 .box .top {
-        transform: rotateX(90deg) translateZ(100px);
-      }
-      .d1 .box .bottom {
-        transform: rotateX(-90deg) translateZ(100px);
-      }
-      .d1 .box:hover .front {
-        transition: 0.7s;
-        transform: translateZ(160px);
-      }
-      .d1 .box:hover .back {
-        transition: 0.7s;
-        transform: translateZ(-160px) rotateY(180deg); /* 将背面文字转正 */
-      }
-      .d1 .box:hover .right {
-        transition: 0.7s;
-        transform: rotateY(90deg) translateZ(160px); /* 从下往上看，顺时针，旋转正 */
-      }
-      .d1 .box:hover .left {
-        transition: 0.7s;
-        transform: rotateY(-90deg) translateZ(160px);
-      }
-      .d1 .box:hover .top {
-        transition: 0.7s;
-        transform: rotateX(90deg) translateZ(160px);
-      }
-      .d1 .box:hover .bottom {
-        transition: 0.7s;
-        transform: rotateX(-90deg) translateZ(160px);
-      }
-      .d1 .box:hover .front1 {
-        color: #ff458e;
-        transition: 0.7s;
-        transform: translateZ(250px);
-      }
-      .d1 .box:hover .back1 {
-        color: #0eb6ff;
-        transition: 0.7s;
-        transform: translateZ(-250px) rotateY(180deg); /* 将背面文字转正 */
-      }
-      .d1 .box:hover .right1 {
-        color: #2cff51;
-        transition: 0.7s;
-        transform: rotateY(90deg) translateZ(250px); /* 从下往上看，顺时针，旋转正 */
-      }
-      .d1 .box:hover .left1 {
-        color: #df0119;
-        transition: 0.7s;
-        transform: rotateY(-90deg) translateZ(250px);
-      }
-      .d1 .box:hover .top1 {
-        color: purple;
-        transition: 0.7s;
-        transform: rotateX(90deg) translateZ(250px);
-      }
-      .d1 .box:hover .bottom1 {
-        color: #2afdff;
-        transition: 0.7s;
-        transform: rotateX(-90deg) translateZ(250px);
-      }
-      @keyframes xz {
-        0% {
-          transform: rotateX(0deg) rotateY(0deg);
-        }
-        100% {
-          transform: rotateX(360deg) rotateY(360deg);
-        }
-      }
+      
       #heart3d {
         position: relative;
         width: 100px;
         height: 150px;
         margin: auto;
         transform-style: preserve-3d;
-        z-index: 999999;
       }
 
       #heart3d div {
@@ -137,7 +28,6 @@
         width: 100px;
         height: 150px;
         border: 2px #106bad solid;
-        z-index: 999999;
         border-left: 0;
         border-bottom: 0;
         border-radius: 50% 50% 0 50%/40% 50% 0 50%;
@@ -257,10 +147,7 @@
     </style>
     <style>
       body {
-        background-color: #000;
-        margin: 0;
-        overflow: hidden;
-        background-repeat: no-repeat;
+        
       }
     </style>
   </head>
