@@ -157,11 +157,13 @@
                 position: absolute;
                 z-index: 1;
                 width: 100px;
-                height: 150px;
+                height: 0;
                 margin: auto;
                 z-index: 1;
                 left: 0;
                 right: 0;
+                top: -150;
+                bottom: 0;
             }
 
             #heart3d div {
@@ -310,10 +312,10 @@
         </style>
         <style>
             body {
-                background-color: #000;
+                /* background-color: #000;
                 margin: 0;
                 overflow: hidden;
-                background-repeat: no-repeat;
+                background-repeat: no-repeat; */
             }
         </style>
     </head>
@@ -358,7 +360,7 @@
         </div>
         <canvas id="canvas" width="980" height="2014" style="position: absolute;z-index: 1;"></canvas>
         <canvas id="sparks" width="980" height="2014" style="position: relative;"></canvas>
-        <audio controls="" autoplay="" name="media">
+        <audio controls="" autoplay="" name="media" style="display: none;">
             <source
                 src="http://m701.music.126.net/20230203164228/707166353862ab51a6475a1ca49d6a14/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096540479/3d25/a221/2213/bd50bf61848cd787b221727ccc0a99f4.mp3"
                 type="audio/mpeg">
@@ -381,7 +383,6 @@
         <script>
             var canvas = document.getElementById("canvas");
             canvas.style.position = "absolute";
-            canvas.style.top = 0;
             var w = window.innerWidth;
             var h = window.innerHeight;
             canvas.width = w;
@@ -486,7 +487,7 @@
                             b: ~~(200 * random()),
                         };
                         step();
-                    }, 500);
+                    }, 100);
                 } else {
                     requestAnimationFrame(step);
                 }
@@ -499,13 +500,13 @@
             var OPT = {
                 selector: "#sparks",
                 amount: 10000,
-                speed: 0.1, // pixels per frame
+                speed: 0.2, // pixels per frame
                 lifetime: 500,
                 direction: {
                     x: -0.5,
                     y: 1
                 },
-                size: [1, 1],
+                size: [1, 4],
                 maxopacity: 1,
                 color: "150, 150, 150",
                 randColor: true,
