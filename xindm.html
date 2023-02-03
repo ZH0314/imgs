@@ -154,10 +154,14 @@
             }
 
             #heart3d {
-                position: relative;
+                position: absolute;
+                z-index: 1;
                 width: 100px;
-                height: 450px;
+                height: 150px;
                 margin: auto;
+                z-index: 1;
+                left: 0;
+                right: 0;
                 transform-style: preserve-3d;
             }
 
@@ -353,12 +357,12 @@
             <div class="heart" style="transform: rotateY(170deg) rotateZ(45deg) translateX(30px);"></div>
             <div class="heart" style="transform: rotateY(175deg) rotateZ(45deg) translateX(30px);"></div>
         </div>
-        <canvas id="canvas" width="980" height="2014" style="/* position: absolute; *//* top: 0px; */"></canvas>
-        <canvas id="sparks" width="980" height="2014"></canvas>
-        <audio autoplay="autopaly" loop="loop" id="audios">
+        <canvas id="canvas" width="980" height="2014" style="position: absolute;z-index: 1;"></canvas>
+        <canvas id="sparks" width="980" height="2014" style="position: relative;"></canvas>
+        <audio controls="" autoplay="" name="media">
             <source
-                src="https://cy-sycdn.kuwo.cn/857c1509a4a46078ad7b03ff72f671d5/636ce7fb/resource/n3/21/85/236531962.mp3"
-                type="audio/mp3">
+                src="http://m701.music.126.net/20230203164228/707166353862ab51a6475a1ca49d6a14/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096540479/3d25/a221/2213/bd50bf61848cd787b221727ccc0a99f4.mp3"
+                type="audio/mpeg">
         </audio>
         <script type="text/javascript">
             document.addEventListener("touchstart", function() {
